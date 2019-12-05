@@ -1,3 +1,16 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -6,3 +19,9 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+
+<img src="{% static 'native_doll.jpg' %}" alt="My Image">
+
+</body>
+</html>
